@@ -1,0 +1,13 @@
+name: code
+
+on:
+  push:
+jobs:
+  code-checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: clone the code 
+        uses: actions/checkout@V7
+      - name: Write the message
+        run: echo
+        
